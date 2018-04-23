@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Ira W. Snyder <isnyder@lcogt.net>
 
-ENV MINICONDA_VERSION=4.3.21 TINI_VERSION=0.15.0
+ENV MINICONDA_VERSION=4.4.10 TINI_VERSION=0.15.0
 
 RUN yum -y install bzip2 ca-certificates git glib2 grep libSM \
         libXext libXrender mercurial sed subversion wget \
