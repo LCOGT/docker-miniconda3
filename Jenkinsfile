@@ -25,28 +25,5 @@ pipeline {
 				}
 			}
 		}
-		stage('Deploy') {
-			parallel {
-				stage('Dev') {
-					when { branch 'dev' }
-					environment {
-						DEV_CREDS = credentials('rancher-cli-dev')
-					}
-					steps {
-						sh '''
-							export DOCKER_IMG="${DOCKER_IMG}"
-							rancher -c ${DEV_CREDS} up --stack BANZAI --force-upgrade --confirm-upgrade -d
-						'''
-					}
-				}
-				stage('Prod') {
-					when { branch 'master' }
-					steps {
-						sh '''
-						'''
-					}
-				}
-			}
-		}
 	}
 }
