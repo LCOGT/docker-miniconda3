@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER Ira W. Snyder <isnyder@lcogt.net>
 
 ENV MINICONDA_VERSION=4.5.11 TINI_VERSION=0.15.0
 
