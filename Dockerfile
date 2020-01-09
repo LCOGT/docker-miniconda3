@@ -1,6 +1,6 @@
 FROM centos:7
 
-ENV MINICONDA_VERSION=4.6.14 TINI_VERSION=0.18.0
+ENV MINICONDA_VERSION=4.7.12 TINI_VERSION=0.18.0
 
 RUN yum -y install bzip2 ca-certificates git glib2 grep libSM \
         libXext libXrender mercurial sed subversion wget \
